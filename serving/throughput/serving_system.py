@@ -274,7 +274,7 @@ def request_scheduler(
                 f.write(f"{minute},{request_count_per_min / elapsed_time * 60},{throughput / elapsed_time * 60}\n")
             request_count_per_min = 0
             last_check_time_queue = current_time
-        time.sleep(5)
+        time.sleep(2)
         
             
         # if current_time - last_check_time >= 120:
